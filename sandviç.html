@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+        <meta name="keywords" content="Mavi Köşe Sandviç, Göztepe sandviç, İzmir sandviç, Göztepe yemek, İzmir yemek, sandviççi, taze sandviç, tost, kahvaltı, hızlı yemek, Göztepe restoran, İzmir restoran">
+        <meta name="description" content="İzmir Göztepe'de taze ve lezzetli sandviçler sunan Mavi Köşe Sandviç'i keşfedin. Özel tariflerimizi inceleyin ve favori sandviçinizi hemen sipariş verin.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <title>Mavi Köşe Sandviç | Göztepe, İzmir</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin:0px;
+                background-color: #333;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                min-height: 100vh;
+
+            }
+            .nav{
+                width:100%;
+                height:70px;
+                background-color: #111111;
+                display:flex;
+                align-items: center;
+                gap:35px;
+                box-shadow: 0 4px 15px rgb(0, 0, 0);
+                background-attachment: fixed;
+                padding:0 40px;
+                border-bottom: 2px solid #f4a261;
+                
+            }
+           .nav-left{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+           }
+           .nav-left i{
+            color:#f4a261;
+            font-size:50px;
+           }
+           .logo-text h2{
+            color:white;
+            margin:0px;
+           }
+           .logo-text h2{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+           }
+           .logo-text p{
+            color:#f4a261;
+            margin:0px;
+            display:block;
+           }
+           .nav-right{
+            display:flex;
+            align-items: center;
+            gap: 35px;
+            margin-left: auto;
+             margin-right: 40px;
+           
+           }
+           .nav-right a{
+            text-decoration: none;
+            color:white;
+           }
+           .nav-right a:hover{
+            color: #f4a261;
+            transition: 0.5;
+           }
+           .nav-right button{
+            background-color:#f4a261 ;
+            border:2px solid white;
+            border-radius: 10px;
+            color:white;
+            padding: 14px 28px;
+            cursor: pointer;
+            font-size:16px;
+           }
+           .hero{
+            background-image: url("sandwich4.png.png");
+            background-size: cover;
+            background-position: center,right;
+            display:flex ;
+            flex-direction:column;
+            text-align: flex-start;
+            justify-content:flex-start;
+            padding-top:170px;
+            gap:0;
+            object-fit: cover;
+            width: 100%;
+            height:450px;
+            padding-left:80px;
+            box-sizing:border-box;
+             background-repeat: no-repeat;
+
+           }
+           .hero p:first-child{
+            color:#f4a261;
+            font-size:20px;
+            font-weight: bold;
+            font-weight: 200;
+            font-family: "Pacifico", cursive;
+            margin-bottom: 0;
+           }
+           .hero p:nth-child(2){
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-size:30px;
+            font-weight: bold;
+            margin-top:0;
+           margin-bottom:0;
+          
+           }
+           .hero p:nth-child(3){
+            color:white;
+            font-family: "Poppins", sans-serif;
+            font-size:30px;
+            font-weight:bold;
+            margin-top:0;
+            margin-bottom:0;
+
+
+           }
+           .hero p:nth-child(4){
+            color:white;
+            font-family: "Poppins", sans-serif;
+            font-size:30px;
+            font-weight:bold;
+            margin-top:0;
+            margin-bottom:0;
+
+           }
+           .hero p:nth-child(5){
+            color: white;
+            font-size:18px;
+            margin-top:0;
+            margin-bottom:0;
+
+           }
+           .hero p:nth-child(6){
+            color: white;
+            font-size:18px;
+            margin-top:0;
+            margin-bottom:0;
+           }
+           .hero-buttons{
+            display:flex;
+            align-items: center;
+            gap:15px;
+           }
+           .hero-buttons a:nth-child(1){
+            background-color: #f4a261;
+            color:white;
+            border:2px solid white;
+            border-radius: 10px;
+            transition:  0.5s;
+            transform: translateY(-2px);
+            font-size:22px;
+            text-decoration: none;
+
+           }
+           .hero-buttons a:nth-child(2){
+            background-color: none;
+            color: white;
+            border:2px solid white;
+            border-radius: 10px;
+            transition: 0.5s;
+            transform: translateY(-2px);
+            text-decoration:none;
+            font-size:22px;
+
+           }
+           .menü{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            justify-content: center;
+            flex-direction: column;
+           }
+           .menü h2{
+            color:#f4a261;
+            font-family: "Pacifico", cursive;
+            font-weight:bold;
+            font-size:18px;
+            text-align: center;
+            margin:20px 0;
+            margin-bottom: 0px;
+
+           }
+           .menü p{
+            color: white;
+            font-size:30px;
+            font-family: "Poppins", sans-serif;
+            margin:0;
+            border-bottom: 2px solid #f4a261;
+            
+
+           }
+           .kart{
+         
+            display: flex;
+            text-align: center;
+            gap:25px;
+            justify-content:center;
+            padding-left:150px;
+            padding-top:20px;
+            transform: translateY(-3px);
+            padding-left:0px;
+            
+           }
+           .siparis-butonu{
+            display: inline-block;
+            background-color:#f4a261;
+            color:white;
+            text-decoration: none;
+            padding:8px 18px;
+            font-family: "Poppins", sans-serif;
+            border-radius: 8px;
+            font-size:14px;
+            font-weight: 600;
+            margin:0 auto;
+            transition: 0.3s;
+
+           }
+           .siparis-butonu:hover{
+            color:#e76f51;
+           }
+           .maxi{
+            width:260px;
+            height:460px;
+            background-color: white;
+            border:2px solid #333;
+            border-radius: 8px;
+            
+            display: flex;
+            text-align: center;
+            gap:10px;
+          
+            flex-direction: column;
+          
+
+           }
+           .maxi img{
+            width:280px;
+            height:210px;
+            object-fit: cover;
+           }
+           .maxi h2{
+            color:#111111;
+            font-size:20px;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            margin:0px;
+           
+           }
+           .maxi p{
+            color:#111111;
+            font-size:16px;
+            font-family: "Poppins", sans-serif;
+            margin-top: 0px;
+
+            
+
+           }
+           .maxi i{
+            color:#f4a261;
+            
+           }
+           .karışık{
+            width:260px;
+            height:460px;
+            background-color: white;
+            border: 2px solid #111111;
+            border-radius: 8px;
+            display: flex;
+            text-align: center;
+            gap:10px;
+            flex-direction: column;
+           }
+           .karışık img{
+            width: 280px;
+            height:210px;
+            object-fit:cover;
+           }
+           .karışık h2{
+            color:#111111;
+            font-size:20px;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+            margin:0px;
+            margin-bottom: 0px;
+            text-align: center;
+           }
+           .karışık p{
+            color:#111111;
+            font-family: "Poppins", sans-serif;
+            font-size:16px;
+
+
+           }
+           .karışık i{
+            color: #f4a261;
+            display: block;
+            margin-top:5px;
+           }
+           .duble{
+            width: 260px;
+            height: 460px;
+            background-color: white;
+            border:2px solid #111111;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            gap:10px;
+            flex-direction: column;
+           }
+           .duble img{
+            width: 280px;
+            height: 210px;
+            object-fit: cover;
+           }
+           .duble h2{
+            color:#111111;
+            font-size:20px;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif ;
+            text-align: center;
+            margin:0px;
+            margin-bottom:0px;
+
+           }
+           .duble p{
+            color: #111111;
+            font-size:16px;
+           
+            font-family: "Poppins", sans-serif;
+
+           }
+           .duble i{
+            color:#f4a261;
+            display:block;
+            margin-top:5px;
+           }
+           .xxl{
+            width: 280px;
+            height: 460px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap:10px;
+            background-color: white;
+            border:2px solid #111111;
+            border-radius: 8px;
+
+           }
+           .xxl img{
+            width: 280px;
+            height: 210px;
+            object-fit: cover;
+           }
+           .xxl h2{
+            color: #111111;
+            font-size:20px;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif ;
+            text-align: center;
+            margin:0px;
+            margin-bottom:0px;
+
+           }
+           .xxl p{
+            color: #111111;
+            font-size:16px;
+            font-family: "Poppins", sans-serif ;
+
+           }
+           .xxl i{
+            color: #f4a261;
+            display: block;
+            margin-bottom: 5px;
+           }
+           .hakkımızda{
+            width:1100px;
+            margin:60px auto;
+            display: flex;
+            text-align: center;
+            gap:50px;
+            background-color:#fdf6ec;
+            background-size: cover;
+            background-position: center;
+            border:2px solid #f4a261;
+            border-radius: 12px;
+            height:420px;
+            padding:30px;
+           }
+           .hakkımızda-left{
+            width:430px;
+            height:350px;
+            flex-shrink: 0;
+           
+           
+           }
+           .hakkımızda-left img{
+            width: 100%;
+            height:100%;
+            object-fit:cover;
+          
+           }
+           .hakkımızda-right{
+            width: 500px;
+            height: 350px;
+            justify-content: center;
+            box-sizing: border-box;
+            padding:20px;
+            flex-direction: column;
+            display:flex;
+            box-sizing: border-box;
+
+           }
+           .hakkımızda-right h2{
+            color:#111111;
+            font-size:30px;
+            font-family:"Poppins", sans-serif;
+            margin:0;
+           }
+           .hakkımızda p{
+            color:#333;
+            font-size:16px;
+            font-family:"Poppins", sans-serif;
+            margin-top:15px;
+            line-height: 1.7;
+            font-family:"Poppins", sans-serif;
+
+           }
+           .hakkımızda-özellikler{
+            display: flex;
+            gap:20px;
+            margin:15px 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 180px;
+           }
+           .özellik{
+            text-align: center;
+            flex:1;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+           }
+           .özellik i{
+            font-size:24px;
+            color: #f4a261;
+            margin-bottom: 10px;
+           }
+          .info{
+        width:1100px;
+        height:210px;
+        margin:40px auto;
+        background-color:#fdf6ec;
+         border:2px solid #111111;
+        border-radius:8px;
+
+        display:flex;
+        align-items:center;
+         justify-content:space-around;
+        }
+
+.konum,
+.saat,
+.telefon{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    padding:20px 35px;
+    flex:1;
+    min-width:0;
+}
+
+.konum,
+.saat{
+    border-right:2px solid #111111;
+}
+
+.konum i,
+.saat i,
+.telefon i{
+    font-size:28px;
+    color:#111111;
+    flex-shrink:0;
+}
+
+.konum-text,
+.saat-text,
+.telefon-text{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    margin:0;
+}
+
+.konum h2,
+.saat h2,
+.telefon h2{
+    color:#111111;
+    font-size:20px;
+    font-weight:bold;
+    font-family:"Poppins", sans-serif;
+    margin:0 0 5px 0;
+    white-space:nowrap;
+}
+
+.konum p,
+.saat p,
+.telefon p{
+    color:#111111;
+    font-size:16px;
+    font-family:"Poppins", sans-serif;
+    margin:5px 0 0 0;
+}
+
+.telefon p{
+    white-space:nowrap;
+}
+           
+         .harita{
+         width:1200px;
+         height:400px;
+         margin:50px auto;
+        border-radius:10px;
+        overflow:hidden;
+        }
+
+        .harita iframe{
+        width:100%;
+        height:100%;
+         border:0;
+        }
+        .footer{
+            width: 100%;
+            padding:40px 80px;
+            background-color: #111111;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            margin-top:60px;
+        }
+        
+        .footer-logo h2{
+            font-size: 20px;
+            font-weight: bold;
+            color:#f4a261
+            font-family:"Poppins", sans-serif;
+            margin:0 0 10px 0;
+
+        }
+        .footer-logo p{
+            font-size:16px;
+            font-family:"Poppins", sans-serif;
+            color: #ddd;
+            margin:0;
+
+        }
+        .footer-link{
+            display: flex;
+            flex-direction: column;
+            gap:8px;
+
+        }
+        .footer-link h3{
+            color: #f4a261;
+            font-family:"Poppins", sans-serif;
+            margin-top:0;
+
+        }
+        .footer-link a{
+            color:white;
+            text-decoration:none;
+        }
+        .footer-link a:hover{
+            color: #f4a261;
+        }
+        .footer-contact h3{
+            color: #f4a261;
+            font-family:"Poppins", sans-serif;
+            margin-top:0;
+
+
+        }
+        .footer-contact p{
+            margin:10 0px;
+        }
+        .footer-contact i{
+            color:#f4a261;
+            margin-right:8px;
+        }
+        .footer-bottom{
+         width:100%;
+         background-color:#0a0a0a;
+          color:#aaa;
+         text-align:center;
+          padding:15px;
+        }
+
+        .footer-bottom p{
+           margin:0;
+        font-size:14px;
+        }
+        @media (max-width: 768px){
+            .nav{
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-right{
+        margin: 0;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-left i{
+        font-size: 35px;
+    }
+
+    .hero{
+        width: 100%;
+        height: 450px;
+        padding: 60px 20px;
+        background-position: center;
+    }
+
+    .hero p:nth-child(2),
+    .hero p:nth-child(3),
+    .hero p:nth-child(4){
+        font-size: 22px;
+    }
+
+    .hero p:nth-child(5),
+    .hero p:nth-child(6){
+        font-size: 14px;
+    }
+    .kart{
+        width:100%;
+        padding:10px 20px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .maxi,
+    .karışık,
+    .duble,
+    .xxl{
+        width:100%;
+        max-width:350px;
+        height:auto;
+        min-height:460px;
+    }
+
+    .maxi img,
+    .karışık img,
+    .duble img,
+    .xxl img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+
+    
+    .hakkımızda{
+        width:calc(100% - 30px);
+        height:auto;
+        margin:50px auto;
+        padding:20px;
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        align-items:center;
+    }
+
+    .hakkımızda-left{
+        width:100%;
+        height:250px;
+    }
+
+    .hakkımızda-left img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    .hakkımızda-right{
+        width:100%;
+        height:auto;
+        padding:10px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hakkımızda-right h2{
+        font-size:24px;
+        text-align:center;
+    }
+
+    .hakkımızda-right > p{
+        font-size:14px;
+        text-align:center;
+    }
+
+
+  
+    .hakkımızda-özellikler{
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        margin:20px 0;
+    }
+
+    .özellik{
+        width:100%;
+        text-align:center;
+    }
+
+    .özellik i{
+        font-size:25px;
+    }
+
+    .özellik h4{
+        margin:5px 0;
+    }
+
+    .özellik p{
+        font-size:14px;
+        margin:5px 0;
+    }
+
+
+    
+    .info{
+        width:calc(100% - 30px);
+        height:auto;
+        min-height:0;
+        margin:30px auto;
+        padding:30px 20px;
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+        position:relative;
+    }
+
+    .konum,
+    .saat,
+    .telefon{
+        position:static;
+        width:100%;
+        padding:0;
+        border-right:none;
+        border-bottom:1px solid #111111;
+        padding-bottom:20px;
+        display:flex;
+        justify-content:center;
+    }
+
+    .telefon{
+        border-bottom:none;
+        padding-bottom:0;
+    }
+
+    .konum-text,
+    .saat-text,
+    .telefon-text{
+        align-items:flex-start;
+    }
+
+    .konum h2,
+    .saat h2,
+    .telefon h2{
+        font-size:17px;
+        margin:0;
+    }
+
+    .konum p,
+    .saat p,
+    .telefon p{
+        font-size:13px;
+    }
+
+
+    
+    .harita{
+        width:calc(100% - 30px);
+        height:300px;
+        margin:40px auto;
+        border-radius:10px;
+        overflow:hidden;
+    }
+
+    .harita iframe{
+        width:100%;
+        height:100%;
+        border:0;
+    }
+
+
+
+    .footer{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:30px;
+        padding:35px 20px;
+    }
+
+    .footer-links{
+        align-items:center;
+    }
+
+    .footer-contact{
+        text-align:center;
+    }
+
+    .footer-bottom{
+        width:100%;
+        padding:15px 10px;
+    }
+
+    .footer-bottom p{
+        font-size:12px;
+    }
+
+}
+
+
+        
+           
+           
+           
+          
+
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="nav-left">
+            <i class="fa-solid fa-burger"></i>
+            <div class="logo-text">
+            <h2>Mavi Köşe</h2>
+            <p>Sandviç</p>
+
+            </div>
+            
+            
+
+            </div>
+            <div class="nav-right">
+                <a href="https://restoranim.net/izmir/karabaglar/fast-food/mavi-kose-komurde-sandvic-goztepe" target="_blank">Anasayfa</a>
+                <a href="https://www.yemeksepeti.com/restaurant/r3zh/mavi-kose-komurde-sandvic?srsltid=AfmBOoq_V7iUEiKl5v_JnC0twnliHVMybMm1kNbhsucvfxwi1P869WTY"target="_blank">Menü</a>
+                <a href="https://yandex.com.tr/maps/org/mavi_kose_murat_usta/180337724009/?ll=27.092398%2C38.395107&z=16"target="_blank">Hakkımızda</a>
+                <a href="https://www.google.com/search?q=mavi+k%C3%B6%C5%9Fe+sandvi%C3%A7+izmir+g%C3%B6ztepe+ileti%C5%9Fim&rlz=1C1GCEA_enTR1208TR1208&biw=1536&bih=730&sca_esv=9d56cc0bc26ac8f2&sxsrf=APpeQntqx_pofXygKooBPl0G1HrAogDDyA%3A1786539961266&ei=uW98aoboD-Gsi-gP7qK2-Q0&ved=0ahUKEwjGqJL-k5uWAxVh1gIHHW6RLd8Q4dUDCA8&uact=5&oq=mavi+k%C3%B6%C5%9Fe+sandvi%C3%A7+izmir+g%C3%B6ztepe+ileti%C5%9Fim&gs_lp=Egxnd3Mtd2l6LXNlcnAiLW1hdmkga8O2xZ9lIHNhbmR2acOnIGl6bWlyIGfDtnp0ZXBlIGlsZXRpxZ9pbTIEECMYJzIFEAAY7wUyCBAAGIAEGKIEMggQABiJBRiiBDIFEAAY7wUyCBAAGIkFGKIESLAZUJQGWMwXcAF4AZABAJgBc6AB2AeqAQMwLjm4AQPIAQD4AQGYAgqgAp8IwgIKEAAYRxjWBBiwA5gDAIgGAZAGCJIHAzEuOaAH_DGyBwMwLjm4B4gIwgcJMC4yLjcuMC4xyAc2gAgB&sclient=gws-wiz-serp#sv=CAwSkgMKBmxjbF9wdhJaCgNwdnESU0NnMHZaeTh4TVd3MllubHJhSE0ySWkwS0oyMWhkbWtnYThPMnhaOWxJSE5oYm1SMmFjT25JR2ZEdG5wMFpYQmxJR2xzWlhScHhaOXBiUkFDR0FNEs8BCgNscWkSxwFDaTF0WVhacElHdkR0c1dmWlNCellXNWtkbW5EcHlCcGVtMXBjaUJudzdaNmRHVndaU0JwYkdWMGFjV2ZhVzFJaHY3aXJwbXlnSUFJV2tNUUFCQUJFQUlRQkJBRkdBQVlBUmdDR0FNWUJDSXRiV0YyYVNCcnc3YkZuMlVnYzJGdVpIWnB3NmNnYVhwdGFYSWdaOE8yZW5SbGNHVWdhV3hsZEduRm4ybHRrZ0VVWm1GemRGOW1iMjlrWDNKbGMzUmhkWEpoYm5REhIKA3RicxILbHJmOiEzc0lBRT0SMgoBcRItbWF2aSBrw7bFn2Ugc2FuZHZpw6cgaXptaXIgZ8O2enRlcGUgaWxldGnFn2ltGhJsb2NhbC1wbGFjZS12aWV3ZXIYCiCx768D"target="_blank">İletişim</a>
+                <a href="https://www.yemeksepeti.com/restaurant/r3zh/mavi-kose-komurde-sandvic?srsltid=AfmBOorrbAFAIb3I2E_t0tplsfoSBa0Ap6r6f1XJZKMaR5iEqMRQTcLK">
+                 <button>Şipariş ver</button>   
+                </a>
+               
+
+            </div>
+            
+
+        </nav>
+        <section class="hero">
+            <p>İzmir'in Göztepe'sinden</p>
+            <p>LEZZETLİ,</p>
+            <p>TAZE VE DOYURUCU</p>
+            <p>SANDVİÇLER</p>
+            <p>Her gün taptaze malzemelerle hazırlanan</p>
+            <p>Özel sandviçlerimizi keşfedin</p>
+            <div  class="hero-buttons">
+             <a href="https://www.yemeksepeti.com/restaurant/r3zh/mavi-kose-komurde-sandvic?srsltid=AfmBOorrbAFAIb3I2E_t0tplsfoSBa0Ap6r6f1XJZKMaR5iEqMRQTcLK">Menüyü Keşfedin</a>
+            <a href="https://www.yemeksepeti.com/restaurant/r3zh/mavi-kose-komurde-sandvic?srsltid=AfmBOorrbAFAIb3I2E_t0tplsfoSBa0Ap6r6f1XJZKMaR5iEqMRQTcLK">sipariş ver</a>
+
+            </div>
+        </section>
+        <section class="menü">
+            <h2>en sevilenler</h2>
+            <p>Popüler Sandviçlerimiz</p>
+
+        </section>
+        <section class="kart">
+            <div class="maxi">
+                <img src="dublekarışıksandviç.png">
+                <h2>Duble Karışık Sandviç</h2>
+                <p>Duble sucuk,salam,sosis,kaşar peyniri
+                    turşu,ketçap,mayonez
+                <i class="fa-solid fa-turkish-lira-sign">280</i>
+               
+
+                </p>
+                <a class="siparis-butonu" href="https://www.yemeksepeti.com/restaurant/r3zh/mavi-kose-komurde-sandvic?srsltid=AfmBOop15khsJ4UiMp_MdWjd_u64fF8w7PWCSHHWabbKieInEcROnsC0" target="_blank">siparis ver</a>
+
+
+            </div>
+            <div class="karışık">
+                <img src="karışık.png">
+                <h2>Double karışık sandviç menü</h2>
+                <p>Double karışık sandviç + patates kızartması +kutu içecek
+                <i class="fa-solid fa-turkish-lira-sign">430</i>
+                </p>
+                <a class="siparis-butonu" href="https://www.yemeksepeti.com/restaurant/r3zh/mavi-kose-komurde-sandvic?srsltid=AfmBOop15khsJ4UiMp_MdWjd_u64fF8w7PWCSHHWabbKieInEcROnsC0" target="_blank">siparis ver</a>
+                
+
+
+
+            </div>
+            <div class="duble">
+                <img src="duble.png">
+                <h2>Duble maxi karışık</h2>
+                <p>Duble sosis,salam,sucuk,kaşar
+                    peyniri,ketçap,mayonez,turşu
+                <i class="fa-solid fa-turkish-lira-sign">280</i>
+
+                </p>
+                 <a class="siparis-butonu" href="https://www.yemeksepeti.com/restaurant/r3zh/mavi-kose-komurde-sandvic?srsltid=AfmBOop15khsJ4UiMp_MdWjd_u64fF8w7PWCSHHWabbKieInEcROnsC0" target="_blank">siparis ver</a>
+
+            </div>
+            <div class="xxl">
+                <img src="xxl.png">
+                <h2>Duble karışık sandviç(xxl)</h2>
+                <p>Duble salam,sosis,sucuk,kaşar
+                    peyniri,turşu,ketçap,mayonez
+                <i class="fa-solid fa-turkish-lira-sign">350</i>
+
+                </p>
+                <a class="siparis-butonu" href="https://www.yemeksepeti.com/restaurant/r3zh/mavi-kose-komurde-sandvic?srsltid=AfmBOop15khsJ4UiMp_MdWjd_u64fF8w7PWCSHHWabbKieInEcROnsC0" target="_blank">siparis ver</a>
+
+            </div>
+
+
+        </section>
+        <section class="hakkımızda" id="hakkımızda">
+            <div class="hakkımızda-left">
+                <img src="sandwixh2.png.jpeg">
+
+            </div>
+            <div class="hakkımızda-right">
+                <h2>Mavi köşe sandviç</h2>
+                <p>İzmir Göztepe'de taze ve lezzetli sandviçlerimizi sizlerle buluşturuyoruz.</p>
+
+           
+            <div class="hakkımızda-özellikler">
+                <div class="özellik">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h4>Taze malzemeler</h4>
+                    <p>her gün taze ve
+                        kaliteli ürünler</p>
+
+                </div>
+                <div class="özellik">
+                    <i class="fa-solid fa-clock"></i>
+                    
+                    <h4>Hızlı servis</h4>
+                    <p>siparişiniz en kısa 
+                        sürede hazır
+                    </p>
+
+
+                </div>
+                <div class="özellik">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <h4>Müşteri memnuniyeti</h4>
+                    <p>sizlerin memnuniyetiniz
+                        bizim önceliğimiz
+                    </p>
+
+                </div>
+            </div>
+
+            </div>
+
+        </section>
+
+        <section class="info">
+            <div class="konum">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="konum-text">
+                <h2>Adresimiz</h2>
+                <p>İnönü Cad., No:589B, Konak, İzmir</p>
+
+                </div>
+
+
+            </div>
+            <div class="saat">
+                <i class="fa-solid fa-clock"></i>
+                <div class="saat-text">
+                <h2>Çalışma saatleri</h2>
+                <p>Her gün
+                    11.00-4.30
+                </p>
+
+                </div>
+                
+
+            </div>
+            <div class="telefon">
+                
+                <i class="fa-solid fa-phone"></i>
+                <div class="telefon-text">
+                <h2>Bizi arayın</h2>
+                <p>02322461925 </p>
+                    </div>
+                
+                           
+            
+
+            </div>
+
+        </section>
+        <section class="harita">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.003137751614!2d27.092402!3d38.395176500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbdf92eea9707f%3A0xf7109e669bbe4692!2zTWF2aSBLw7bFn2UgS8O2bcO8cmRlIFNhbmR2acOnIChHw7Z6dGVwZSk!5e0!3m2!1str!2str!4v1786642618344!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        </section>
+        <footer class="footer">
+            <div class="footer-logo">
+                <h2>Mavi köşe
+                    Sandviç
+                </h2>
+                <p>Taze • Lezzetli • Doyurucu</p>
+
+            </div>
+            <div class="footer-link">
+                <h3>Hızlı Bağlantılar</h3>
+                <a href="https://restoranim.net/izmir/karabaglar/fast-food/mavi-kose-komurde-sandvic-goztepe"target="_blank">Anasayfa</a>
+                <a href="https://www.tripadvisor.com.tr/Restaurant_Review-g298006-d26584378-Reviews-Mavi_kose-Izmir_Izmir_Province_Turkish_Aegean_Coast.html"target="_blank">Hakkımızda</a>
+                <a href="https://www.tripadvisor.com.tr/Restaurant_Review-g298006-d26584378-Reviews-Mavi_kose-Izmir_Izmir_Province_Turkish_Aegean_Coast.html"target="_blank">Menü</a>
+                <a href="https://www.google.com/search?q=mavi+k%C3%B6%C5%9Fe+sandvi%C3%A7+izmir+g%C3%B6ztepe+ileti%C5%9Fim&sca_esv=66edcf3fd20f62eb&rlz=1C1GCEA_enTR1208TR1208&sxsrf=APpeQnt7gNW9lfqNF0bdkZyrSZFpEP9foA%3A1786646273863&ei=AQ9-ap6fNKmsi-gPgsT6mAs&ved=0ahUKEwjeo_iDoJ6WAxUp1gIHHQKiHrMQ4dUDCA8&uact=5&oq=mavi+k%C3%B6%C5%9Fe+sandvi%C3%A7+izmir+g%C3%B6ztepe+ileti%C5%9Fim&gs_lp=Egxnd3Mtd2l6LXNlcnAiLW1hdmkga8O2xZ9lIHNhbmR2acOnIGl6bWlyIGfDtnp0ZXBlIGlsZXRpxZ9pbTIEECMYJzIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBTIIEAAYiQUYogQyCBAAGIAEGKIESOsbUNwCWI8acAJ4AJABAJgBvgGgAfQKqgEEMC4xMbgBA8gBAPgBAZgCDKACqgrCAgcQIxiwAxgnwgIKEAAYRxjWBBiwA8ICFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBmAMAiAYBkAYNugYECAEYGZIHBDIuMTCgB6lJsgcEMC4xMLgHoQrCBwUwLjcuNcgHH4AIAQ&sclient=gws-wiz-serp"target="_blank">İletişim</a>
+                </div>
+
+            <div class="footer-contanct">
+                <h3>Bize ulaşın</h3>
+                <p><i class="fa-solid fa-map-pin"></i>İzmir,GÖZTEPE</p>
+                <P><i class="fa-solid fa-phone"></i>0232 246 19 25</P>
+
+            </div>
+
+
+
+
+
+
+
+
+        </footer>
+
+        <div class="footer-bottom">
+        <p>© 2026 Mavi Köşe Sandviç | Tüm hakları saklıdır.</p>
+        </div>
+          
+        
+    </body>
+</html>
+
+     
+
+    
